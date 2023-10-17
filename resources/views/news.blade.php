@@ -2,4 +2,7 @@
 
 @section('title', 'News')
     
+@section('content')
+    
+    
 @endsection

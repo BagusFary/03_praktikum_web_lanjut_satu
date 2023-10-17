@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\AboutUsController;
-use App\Http\Controllers\ContactUsController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProgramController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,4 @@ Route::prefix('program')->group(function(){
 });
 Route::get('/about', [AboutUsController::class, 'index']);
 Route::get('/contact', [ContactUsController::class, 'index']);
+

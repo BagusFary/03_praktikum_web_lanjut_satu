@@ -2,4 +2,7 @@
 
 @section('title', 'Program')
     
+@section('content')
+    
+    
 @endsection
