@@ -15,3 +15,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/profile/{id?}', [HomeController::class, 'profile']);
+Route::get('/pengalaman', [HomeController::class, 'pengalaman']);
