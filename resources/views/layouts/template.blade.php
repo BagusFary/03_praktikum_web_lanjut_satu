@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/profile" class="nav-link">
+            <a href="/profile" class="nav-link {{ Request::is('profile*') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-user"></i>
               <p>
                 Profile
@@ -94,7 +94,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/pengalaman" class="nav-link">
+            <a href="/pengalaman" class="nav-link {{ Request::is('pengalaman') ? 'active' : '' }}" >
                 <i class="nav-icon fas fa-university"></i>
               <p>
                 Pengalaman Kuliah
